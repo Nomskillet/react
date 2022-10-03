@@ -80,11 +80,16 @@ body {
 	background-color: #cc1616;
   }
 
-  .backroundImage{
+  .backroundImageSearch{
 
 	background-image: url(https://www.wsfa.com/resizer/YXTv1YuBYMHxRelOox0RVaxWqag=/arc-photo-gray/arc3-prod/public/B6L4RX347ZDWDMFLGUTSKGLNM4.png);
 	height: 800px;
 
+  }
+
+  .backroundImageFavorite{
+	background-image: url(https://img.freepik.com/free-photo/top-view-popcorn-package-salted-tasty-spread-all-yellow-background_140725-22515.jpg?w=2000);
+	height: 1000px;
   }
 
   .textColor{
@@ -96,7 +101,7 @@ body {
 .flip-card {
 	background-color: transparent;
 	width: 300px;
-	height: 200px;
+	height: 440px;
 	border: 1px solid #f1f1f1;
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -133,7 +138,9 @@ body {
   
   /* Style the back side */
   .flip-card-back {
-	background-color: dodgerblue;
-	color: white;
+	background-color: #cc1616;
+	background-image: url(https://pe-images.s3.amazonaws.com/photo-effects/film-strip-photo-collage/photoshop-film-strip-shape.gif);
+	background-size: contain;
+	color: #cc1616;
 	transform: rotateY(180deg);
   }

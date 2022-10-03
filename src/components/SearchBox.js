@@ -67,11 +67,11 @@ const SearchBox = () => {
 		saveToLocalStorage(newFavoriteList);
 	};
 	return ( 
-	<div className='backroundImage '>
+	<div className='backroundImageSearch '>
 	
 	 <NavigationBar />
 	
-
+		
 			<div className='container-fluid movie-app'>
 				<div className='row d-flex align-items-center mt-4 mb-4 textColor'>
 					<MovieListHeading heading='Search for Movies' />	
