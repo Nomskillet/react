@@ -77,12 +77,12 @@ const SearchBox = () => {
 					<MovieListHeading heading='Search for Movies' />	
 					 <div className='col col-sm-4'>
 			
-			<input
-				className='form-control'
-				// value={value}
-				onChange={(event) => setSearchValue(event.target.value)}
-				placeholder='Type to search...'
-			></input>
+					<input
+						className='form-control'
+						// value={value}
+						onChange={(event) => setSearchValue(event.target.value)}
+						placeholder='Type to search...'
+					></input>
 		</div> 
 					{/* <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} /> */}
 				</div>

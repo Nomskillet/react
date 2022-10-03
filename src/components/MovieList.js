@@ -6,12 +6,21 @@ import {addToFavorite} from '../actions/movieActions'
 const MovieList = () => {
 	// const FavoriteComponent = props.favoriteComponent;
 	let dispatch = useDispatch()
+	const [details, setDetails] = useState()
 	const [favoriteMovie, setFavoriteMovie] = useState([])
  const movies = useSelector(state=> state.movies)
 //  console.log(movies)
 	const handleFavoritesClicks = (obj) => {
 		dispatch(addToFavorite(obj))
 	}
+
+	const displayDetails = async (id) => {
+		console.log(id)
+		let results = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=129ba69a`)
+		let data = await results.json()
+		console.log(data)
+		setDetails(data)
+	 }
 
 	return (
 		<>
@@ -43,14 +52,15 @@ const MovieList = () => {
 				<div>
 
 					
-						<div class="flip-card">
+						<div class="flip-card" onMouseOver={()=> displayDetails(movie.imdbID)}>
 							<div class="flip-card-inner">
 								<div class="flip-card-front">
 								<img src={movie.Poster} alt='movie'></img>
 								</div>
 								<div class="flip-card-back">
 								<p>{movie.Title}</p>
-								<p></p>
+								{(details) ? <p>{details.Plot}</p>:''}
+								{/* <p>{details.Plot}</p> */}
 								<p></p>
 								</div>
 							</div>
