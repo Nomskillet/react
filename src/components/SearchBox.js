@@ -67,7 +67,7 @@ const SearchBox = () => {
 		saveToLocalStorage(newFavoriteList);
 	};
 	return ( 
-	<div className='backroundImageSearch '>
+	<div className='backroundImageSearch fontFam'>
 	
 	 <NavigationBar />
 	
@@ -88,7 +88,7 @@ const SearchBox = () => {
 				</div>
 				<div className='row'>
 					<MovieList
-						// movies={movies}
+						movies={movies}
 						// handleFavoritesClick={addFavoriteMovie}
 						// favoriteComponent={AddFavorites}
 					/>

@@ -15,19 +15,21 @@ const FavoriteMovies = (props) => {
 
   return (
 	<>
-    <body className='backroundImageFavorite'>
+    <body className='backroundImageFavorite fontFam textColor '>
     
         <NavigationBar/>
-        <MovieListHeading heading="Favorite Movies">
-        </MovieListHeading>
-         
+     
+	 <MovieListHeading heading="Favorite Movies"/>
+	 
+		<div className='favsNow'>
    		{favoriteMovies.map((movie, index) => 
    
 				<div className='container-fluid movie-app '> 
 
-				<div className='row d-flex align-items-center mt-4 mb-4 textColor'>
+				<div className='textColor'>
 
-					
+				  
+       
 	
 		<div className='image-container d-flex justify-content-start m-3'>
 			<img src={movie.Poster} alt='movie'></img>
@@ -57,7 +59,7 @@ const FavoriteMovies = (props) => {
 		
 
 		)}
-
+</div>
 		
 				
 				

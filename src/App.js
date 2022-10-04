@@ -38,17 +38,26 @@ const App = () => {
 		height="75%" width="100%"></img>
 		</div>
 
-		<div className='video-background'>
 	
-
-		</div>
 		
+		<div className='video-background col-lg'>
 		
+		<iframe width="970" height="410" src="https://www.youtube.com/embed/ma0ciiAsfLs?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+       
+	   
+	   </div>
 
-		<Player 
+			<div>
+				
+				Home is where you make it 
+				<b/>
+				-Old Cajun Man
+
+			</div>
+		{/* <Player 
 			
 			className="react-player player-wrapper"
-			// src={Video}
+			url
       playing
       width="100%"
       height="100%"
@@ -56,7 +65,7 @@ const App = () => {
 	controls={false}
       >
 
-			</Player>
+			</Player> */}
 
 
 		

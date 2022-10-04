@@ -1,6 +1,10 @@
 body {
 	background: #D0A90C;
 	color: #ffffff;
+	background-image: url(https://img.freepik.com/free-photo/top-view-popcorn-package-salted-tasty-spread-all-yellow-background_140725-22515.jpg?w=2000);
+	height: 800px;
+	
+  	background-attachment: fixed;
 	
 }
 
@@ -50,9 +54,10 @@ body {
 
 .video-background{
     position: relative;
-    top: -750px;
-    right: -420px;
+    top: -710px;
+    right: -225px;
     z-index: 5;
+	opacity: 79%;
 }
 
 /* .react-player {
@@ -84,12 +89,14 @@ body {
 
 	background-image: url(https://www.wsfa.com/resizer/YXTv1YuBYMHxRelOox0RVaxWqag=/arc-photo-gray/arc3-prod/public/B6L4RX347ZDWDMFLGUTSKGLNM4.png);
 	height: 800px;
-
+	
+  	background-attachment: fixed;
   }
 
   .backroundImageFavorite{
-	background-image: url(https://img.freepik.com/free-photo/top-view-popcorn-package-salted-tasty-spread-all-yellow-background_140725-22515.jpg?w=2000);
-	height: 1000px;
+	/* background-image: url(https://img.freepik.com/free-photo/top-view-popcorn-package-salted-tasty-spread-all-yellow-background_140725-22515.jpg?w=2000);
+	height: 1000px; */
+	
   }
 
   .textColor{
@@ -139,8 +146,34 @@ body {
   /* Style the back side */
   .flip-card-back {
 	background-color: #cc1616;
-	background-image: url(https://pe-images.s3.amazonaws.com/photo-effects/film-strip-photo-collage/photoshop-film-strip-shape.gif);
+	/* background-image: url(https://pe-images.s3.amazonaws.com/photo-effects/film-strip-photo-collage/photoshop-film-strip-shape.gif); */
 	background-size: contain;
-	color: #cc1616;
+	color: white;
 	transform: rotateY(180deg);
+  }
+
+  .fontFam{
+	font-family: 'Anton', sans-serif;
+	/* margin: 10px; */
+    
+  }
+
+.favsNow{
+	/* display: flex; */
+	justify-content: center;
+}
+
+Link{
+    font-family: 'Roboto', sans-serif;
+    color: black !important;
+  }
+
+  a {
+	color: black;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: black;
+	text-decoration: none;
   }

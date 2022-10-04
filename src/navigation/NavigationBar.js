@@ -8,19 +8,20 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div>
+    
+    <div className=''>
 
 
 
-    <Navbar  expand="lg" className='text-center navColor'>
+    <Navbar  expand="lg" className='navColor fontFam'>
       <Container>
-        <Navbar.Brand href="/">The Movie App</Navbar.Brand>
+        <Navbar.Brand href="/">CiniCliq</Navbar.Brand>
    
 
-          <Nav className="me-auto text-center">
+          <Nav className="">
             {/* <Link to="/" className='m-1'>Home</Link> */}
-            <Link to="/search" className='m-1' >Search for Movies</Link>
-            <Link to="/favoriteMoviesPage" className='m-1'>My Favorite Movies</Link>
+            <Link to="/search" className='m-2' >Search for Movies</Link>
+            <Link to="/favoriteMoviesPage" className='m-2'>My Favorite Movies</Link>
      
            
           </Nav>
