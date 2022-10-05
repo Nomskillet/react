@@ -58,6 +58,12 @@ body {
     right: -225px;
     z-index: 5;
 	opacity: 79%;
+	height: 970;
+	width: 410;
+}
+
+iframe{
+	
 }
 
 /* .react-player {
@@ -94,9 +100,11 @@ body {
   }
 
   .backroundImageFavorite{
-	/* background-image: url(https://img.freepik.com/free-photo/top-view-popcorn-package-salted-tasty-spread-all-yellow-background_140725-22515.jpg?w=2000);
-	height: 1000px; */
+	background-image: url(https://img.freepik.com/free-photo/top-view-popcorn-package-salted-tasty-spread-all-yellow-background_140725-22515.jpg?w=2000);
+	/* height: 1000px; */
 	
+	/* background-repeat: no-repeat; */
+	background-attachment: fixed;
   }
 
   .textColor{
@@ -159,8 +167,9 @@ body {
   }
 
 .favsNow{
-	/* display: flex; */
+	display: absolute;
 	justify-content: center;
+	margin: 60px;
 }
 
 Link{
@@ -176,4 +185,8 @@ Link{
   a:hover {
 	color: black;
 	text-decoration: none;
+  }
+
+  .favHeader{
+	margin: 20px;
   }
